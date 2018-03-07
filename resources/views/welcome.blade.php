@@ -1,91 +1,49 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
 
-        <title>Laravel</title>
+  <header>
+    <h1> Jake's Coffee Shop </h1>
+    <title> Jake's Coffee Shop </title>
+  </header>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+  <body>
+    <nav>
+      <a href="Jake's Coffee Shop.html">Home</a>
+      <a href="">Menu</a>
+      <a href="">Music</a>
+      <a href="">Jobs</a>
+     </nav>
 
-            .full-height {
-                height: 100vh;
-            }
+    <p> Come in and experience... <p>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+    <figure>
+      <img src=http://www.newhealthadvisor.com/images/NHN06398/coffee.jpg width="50%">
+    </figure>
 
-            .position-ref {
-                position: relative;
-            }
+    <ul>
+     <li> Specialty Coffee and Tea
+     <li> Freshly made sandwiches
+     <li> Bagels, Muffins, and Organic Snacks
+     <li> Music and Poetry Readings
+     <li> Open mic nights
+     <li> ...
+    </ul>
+    <footer>
+      <a href="https://goo.gl/gr1Xwq"> 
+          23 Pine Road <br>
+          Nottingham, NG1 5YU </a> <br>
+          0115 9324567
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+      <p> Copyright © 2011 Jake's Coffee House <br>
+        <a href=mailto:"jake@jcoffee.com">jake@jcoffee.com</a></p>
+     </footer>
+  </body>
 
-            .content {
-                text-align: center;
-            }
+<!--
+References:
+https://www.w3schools.com/tags/tag_comment.asp
+http://jakescoffee.net/contact/
+-->
 
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    MWAHAHAHAHHAHAHAHAH
-                </div>
-            </div>
-        </div>
-    </body>
 </html>
